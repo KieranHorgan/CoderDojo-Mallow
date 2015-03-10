@@ -1,0 +1,116 @@
+p, li, a {
+  font-size: 1.8em;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+#sessionsNav {
+  float: left;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+}
+
+#sessionsNav ul {
+  list-style: none;
+  padding: 10px 10px 10px 30px;
+}
+
+#sessionsNav li {
+  margin: 10px 0;
+}
+
+#sessionsNav li a, #sessionsNav .linkStyle {
+  border: none;
+  padding: 0 4px;
+  margin: 10px 0;
+  border-left: 1px solid #bbb;
+  color: #bbb;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#sessionsNav li a:hover, #sessionsNav .linkStyle:hover {
+  border-left: 1px solid #E73C3C;
+  color: #888;
+}
+
+#sessionsNav li ul {
+  padding: 0;
+}
+
+#sessionsNav li ul li {
+  margin-left: 10px;
+}
+
+.sessionsNavTopList {
+  border-bottom: 2px solid #E73C3C;
+  display: inline-block;
+}
+
+#sessionsNav .openNav.opened {
+  border-left: 1px solid #E73C3C;
+  color: #E73C3C;
+}
+
+#sessionsNav .accordian {
+  display: none;
+}
+
+#sessionsNav .accordian.clicked {
+  display: block;
+}
+
+li + .sessionNavTopList {
+  border-top: 1px dashed #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#sessionsMain {
+  float: right;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  position: relative;
+  top: 0;
+}
+
+#sessionsMain>section {
+  border-top: 1px dashed #ccc;
+  padding: 20px 0;
+}
+
+#sessionsMain>section:nth-child(1) {
+  border-top: none;
+  padding-top: 0;
+}
+
+#sessionsMain>section p {
+  padding: 0 100px;
+}
+
+@media (max-width: 1000px) {
+  #sessionsMain>section p {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  #sessionsNav {
+    float: none;
+    position: relative;
+    border-top: 2px solid #E73C3C;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  #sessionsMain {
+    float: none;
+  }
+}

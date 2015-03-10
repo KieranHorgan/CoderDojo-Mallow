@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto"  viewBox="0 0 466 466">
+	<circle fill="#E73C3C" cx="233" cy="233" r="233"/>
+	<circle fill="#fff" cx="233" cy="233" r="224"/>
+	<path d="M 233,459 a 226 226 0 0 1 0,-452 a 113 113 0 0 1 0,226 z"  fill="#E73C3C"/>
+	<circle cx="233" cy="346" r="113" fill="#fff"/>
+	<text font-weight="bold" fill="#fff" x="195" y="160" font-size="140px" font-family="Courier">0</text>
+	<text font-weight="bold" x="195" y="385" font-size="140px"  fill="#E73C3C" font-family="Courier">1</text>
+</svg>

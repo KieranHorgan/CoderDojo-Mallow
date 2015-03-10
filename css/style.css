@@ -1,0 +1,885 @@
+/* This is the font used in both the CoderDojo and CoderDojo Mallow logos */
+@font-face {
+  src: url('/css/fonts/InputSans-exLight.eot');
+  src: url('/css/fonts/InputSans-exLight.eot') format("embedded-opentype"), url('/css/fonts/InputSans-exLight.woff') format("woff"), url('/css/fonts/InputSans-exLight.ttf') format("opentype"), url('/css/fonts/InputSans-exLight.svg') format("svg");
+  font-family: 'Input Sans';
+}
+
+/* This is the font used for the header tags */  
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(http://fonts.gstatic.com/s/ptserif/v8/I-OtoJZa3TeyH6D9oli3ifesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
+html {
+  font-size: 62.5%; /* Sets the default font size, so that 1em/rem normally equal to 10px */
+  z-index: -20; /* For some reason, in IE, */
+}
+
+:focus {
+  outline: 0;
+}
+
+/* Styling for the heading tags */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: 'PT Serif', serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #555;
+}
+
+h1 {
+  font-size: 35px; /* Use both px and rem, with px as a fallback */
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 31px;
+  margin: 0 0 10px 0;
+  font-size: 3.1rem;
+  margin: 0 0 1rem 0;
+}
+
+h3 {
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+/* End heading styles */
+
+/* Styling for regular text */
+p, pre, li, a, code, div {
+  font-size: 17px;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #555;
+  font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+/* Styling for Lists */
+ol, ul {
+  padding: 10px 85px;
+  font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+/* Styling for lists within lists*/
+ul ul {
+  padding: 5px 25px;
+  font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+/* Putting a <br> tag inside a list is invalid so instead, replicate it with CSS */
+li.br:before {
+  content:"\a";
+  white-space: pre;
+}
+
+/* Quotes styling */
+blockquote {
+  padding: 0;
+  margin: 0 60px 30px;
+  border-left: 3px solid #ddd;
+}
+
+blockquote p {
+  padding: 0 10px;
+  margin-bottom: .4em;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.55;
+}
+
+/* Link styling, using a border rather than an underline */
+a {
+  color: #41b7d8;
+  border-bottom: .08em solid rgba(0,0,0,.1);
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+a:hover, a:visited, a:focus {
+  border-bottom: .08em solid #41b7d8;
+}
+
+a:active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  color: #e73C3C;
+  border-bottom: .08em solid #e73C3C;
+}
+
+/* Styling for links where an underlying border is unwanted */
+.noLinkStyle, .noLinkStyle:hover, .noLinkStyle:visited, .noLinkStyle:active, .noLinkStyle:focus {
+  border-bottom: none;
+}
+
+img {
+  max-width: 100%; /* I don't want images going outside the defined width, creating an unnecessary scroll bar */
+  height: auto;
+  vertical-align: middle;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #f1f1f1; /* Too much contrast is bad. This tone it down a little */
+  font-weight: normal;
+  overflow-x: hidden; /* Don't want any of those stupid horizontal scroll bars */
+}
+
+/* Wrapper around the nav so that the red strip carries the whole way across the page */
+#navWrapper {
+  position: relative;
+  height: 64px;
+  max-width: 100%;
+  min-width: 100%;
+  top: 0;
+  background-color: #e73C3C;
+  z-index: 3;
+}
+
+/* Main nav */
+nav {
+  position: relative;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Link in the form of our logo */
+nav>a {
+  display: inline-block;
+  margin: 0 0 0 60px; 
+}
+
+/* Inset box-shadow for hover, etc */
+nav>a:hover, nav>a:focus, nav>a:active {
+  box-shadow: inset 0 -2px 0 0 #fff;
+}
+
+/* Red and white logo */
+nav #coderdojoMallowLogo {
+  position: relative;
+  height: 52px;
+  width: 52px;
+  float: left;
+  padding: 6px 10px 6px 5px;
+}
+
+/* CoderDojo Mallow logo text */
+nav h1 {
+  position: relative;
+  font: 28px/32px "Input Mono Narrow",  monospace;
+  padding: 16px 10px 16px 4px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+
+/* Menu button for smaller screens */
+nav>.navMenu {
+  position: relative;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 0;
+  padding: 6px;
+}
+
+/* This will drop down on smaller screens, and go up to the main navbar on larger ones */
+/* It is currently styled as if it was ready to be dropped down */
+#navDropdown {
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #e73C3C;
+  width: 100%;
+  min-height: 64px;
+  top: 0;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+#navDropdown ul {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navDropdown li {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #fff;
+  height: 100%;
+}
+
+#navDropdown a {
+  color: #e73C3C;
+  text-decoration: none;
+  font: 16px/64px sans-serif;
+  height: 100%;
+  padding: 0 20px;
+  display: block;
+  border-bottom: none;
+}
+
+/* This is how the fancy triangle hover effect is created */
+#navDropdown a:before {
+	position: absolute;
+	top: -10px; /* It starts above the frame */
+	left: 50%; /* In the center */
+  margin-left: -10px;
+	width: 0;
+	height: 0;
+	content: '';
+	border-left: 10px solid transparent; /* These three borders makes a 10 pixel high triangle */
+	border-right: 10px solid transparent;
+	border-top: 10px solid #e73C3C;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/* The colour must change depending on the background */
+#navDropdown a.whiteTri:before {
+	border-top: 10px solid #fff;
+}
+
+/* When hovered over, activated etc. it must be brought down, to just under the top of the link */
+#navDropdown li:hover a:before, #navDropdown ul li a:focus:before, #navDropdown li a.clicked:before {
+	top: 0;
+}
+
+/* Smaller nav for medium screens */
+#fixedNav {
+  position: fixed;
+  top: 0;
+  min-height: 48px;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e73C3C;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+#fixedNavWrapper {
+  display: inline-block;
+}
+
+/* Smaller version of the logo */
+#fixedNavcoderdojoLogo {
+  position: relative;
+  height: 34px;
+  width: 34px;
+  float: left;
+  padding: 7px 10px 7px 4px;
+}
+
+#fixedNav ul {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  list-style: none;
+}
+
+#fixedNav li {
+  display: inline-block;
+  margin-right: -5px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #fff;
+  height: 100%;
+}
+
+#fixedNav a {
+  color: #e73C3C;
+  text-decoration: none;
+  font: 16px/48px sans-serif;
+  height: 100%;
+  display: block;
+  padding: 0 16px;
+  border: none;
+}
+
+/* Inset box-shadow this time, rather than the triangle */
+#fixedNav a:hover, #fixedNav a:focus, #fixedNav a:active, #fixedNav li a.clicked {
+  box-shadow: inset 0 -2px 0 0 #e73C3C;
+}
+
+/* Wrapper to go around the <article> and <aside> */
+#contentWrapper {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* For older browsers */
+.browsehappy {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  background: #e73C3C;
+  color: #fff;
+}
+
+.browsehappy a {
+  color: #74d2ec;
+}
+
+/* Main content */
+article {
+  box-sizing: border-box;
+  position: relative;
+  width: 62%;
+  float: left;
+  margin: 0 1% 0 2%;
+  padding: 0;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+/* Makes the article span the full width of the page */
+.articleFull {
+  width: 96%;
+  margin: 0 2%;
+  float: none;
+}
+
+/* Adds a break in the whitespace in the <article> and <aside> */
+.splitContent {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  float: left;
+  margin: 0 0 20px;
+  padding: 20px 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+/* Logo for CoderDojo on index page */
+#coderdojoLogo {
+  float: left;
+  padding-left: 60px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+#coderdojoLogo img {
+  width: 48px;
+  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
+  vertical-align: middle;
+}
+
+#coderdojoLogo h2 {
+  font-family:  "Input Mono Narrow",  monospace;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#coderdojoLogoText {
+  display: block;
+  font-weight: normal;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  color: #333;
+  margin: 18px 0px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+/* Padding for all headings in the <article> */
+article p, article h6, article h5, article h4, article h3, article h2, article h1 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* Padding for all headings in the <aside> */
+aside p, aside h6, aside h5, aside h4, aside h3, aside h2, aside h1 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Lists in the <aside>*/
+aside ol, aside ul {
+	list-style: none;
+}
+
+/* <div> to wrap around images */
+.imgWrapper {
+  text-align: center;
+}
+
+/* Large image */
+.imgLarge {
+  box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  max-width: 720px;
+  margin: 10px auto 5px;
+  border-radius: 6px;
+}
+
+/* Text to go with large image */
+article .imgLargeText {
+  width: 80%;
+  margin: 16px auto;
+}
+
+/* The sections that is white */
+article>section>section, aside>section {
+  border-top: 1px dashed #ccc;
+  padding: 20px 0;
+}
+
+/* First of each white section */
+/* No border or padding */
+article>section>section:nth-child(1), aside>section:nth-child(1) {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Date Stamp to go under ever section in the "NEWS" page */
+.newsDateStamp {
+  color: #888;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding-top: 15px;
+}
+
+/* Image slider */
+/* Most of the magic behind this is done in the javascript */
+#slider {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 720px;
+  height: auto;
+  margin: 10px auto 5px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  max-width: 720px;
+}
+
+#slider img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#slider h3 {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #ccc;
+  width: 100%;
+  font-weight: 400;
+  margin: 0 0 5px;
+  padding: 30px 5px 15px;
+  background: rgba(0,0,0, 0.4);
+  background: linear-gradient(                to top,                rgba(0, 0, 0, 0.6),                rgba(0, 0, 0, 0)              );
+  border-radius: 5px;
+}
+
+/* Control Buttons for slider */
+.moveLeft, .moveRight {
+  position: absolute;
+  top: 40%;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.moveLeft:hover, .moveRight:hover {
+  opacity: 1;
+  -webkit-transition: 0.2s ease;
+}
+
+.moveLeft {
+  border-radius: 0 2px 2px 0;
+}
+
+.moveRight {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+/* Secondary content, on the left */
+aside {
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  background-color: #fff;
+  width: 32%;
+  margin: 0 2% 20px 1%;
+  padding: 20px 0 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+aside ul {
+  text-align: center;
+  padding: 0 80px;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+/* Add border to the bottom of any list in the <aside> */
+aside li {
+  border-bottom: 1px dotted #e73C3C;
+}
+
+/* No border on any list with a class of .noListStyle */
+aside .noListStyle li {
+  border-bottom: none;
+}
+
+/* Different styles for the top element in each list */
+/* The reason :nth-child() isn't used is because this may not always be wanted */
+aside .topList {
+  background-color: #e73C3C;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 14px;
+  margin-top: 1.4rem;
+}
+
+/* <div> to go around Twitter timeline */
+#twitterWrapper {
+  text-align: center;
+  height: 600px;
+}
+
+.twitter-timeline {
+  height: 600px;
+}
+
+/* Styles for text */
+/* Using classes instead of inline CSS */
+.alignRight {
+  text-align: right;
+}
+
+.floatRight {
+  float: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.clearFix {
+  clear: both;
+}
+
+/* <div> to go around the <footer> */
+#footerWrapper {
+  position: relative;
+  background: #e73C3C;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+footer {
+  max-width: 1400px;
+  position: relative;
+  background: #e73C3C;
+  padding: 15px 60px;
+  margin: 0 auto;
+}
+
+footer p {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* If the user is on a large screen i.e. atleast 1000 pixels wide */
+@media (min-width: 1000px) {
+
+  /* Set the nav to fixed */
+  #navWrapper {
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+    position: fixed;
+  }
+  
+  /* Also set the drop down nav to fixed */
+  #navDropdown {
+    position: fixed;
+    width: auto;
+    margin-right: 25px;
+    top: 0;
+    right: 0;
+    background: none;
+    border-bottom: none;
+    box-shadow: none;
+    z-index: 3;
+  }
+
+  #navDropdown a {
+    color: #fff;
+  }
+  
+  /* The fixed nav is irrelevant so set it to display: none */
+  #fixedNav {
+    display: none;
+  }
+
+  #contentWrapper {
+    padding-top: 64px;
+  }
+
+}
+
+/* If the user is on a very large screen i.e. atleast 1400 pixels wide */
+@media (min-width: 1400px) {
+  
+  /* The dropdown menu must be in the main nav. The nav will max out at 1400px but since the drop down is absolute it won't be affected 
+     Therefore, we must set the dropdown to be set 50% of the screen, then offset half the nav's width, i.e. 700px, back right */
+  #navDropdown {
+    right: calc(50% - 700px);
+  }
+}
+
+/* If the user is on a small - medium screen i.e. under 1000 pixels wide */
+@media (max-width: 1000px) {
+  nav h1 {
+    font: 20px/32px;
+    padding: 16px 10px 16px 5px;
+  }
+  
+  nav img {
+    height: 40px;
+    width: 40px;
+    padding: 11px 5px 11px 5px;
+  }
+  
+  /* Change the <article> and <aside> to (almost) full width */
+  article {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  aside {
+    position: relative;
+    width: 98%;
+    margin: 0 1% 20px;
+  }
+  
+ aside ul {
+    padding: 0 20px;
+  }
+  
+  article p, article h6, article h5, article h4, article h3, article h2, article h1, aside p, aside h6, aside h5, aside h4, aside h3, aside h2, aside h1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  article img {
+    border-radius: 0px !important;
+  }
+}
+
+/* If the user is on a medium small screen i.e. under 700 pixels wide */
+@media (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+
+  /* Simulate a <br> tag in CSS*/
+  footer span.floatRight:before {
+    content: '\a';
+    white-space: pre;
+  }
+
+  footer span.floatRight {
+    float: none;
+  }
+}
+
+/* If the user is on a small screen i.e. under 570 pixels wide */
+@media (max-width: 570px) {
+  ol, ul {
+    padding: 10px 45px;
+  }
+
+  ul ul {
+    padding: 5px 25px;
+  }
+  
+  article blockquote {
+    margin: 0 25px 30px;
+  }
+  
+  #fixedNav {
+    display: none;
+  }
+  
+  nav {
+    height: 48px;
+    position: fixed;
+  }
+  
+  #navWrapper {
+    height: 48px;
+    position: fixed;
+  }
+  
+  nav #coderdojoMallowLogo {
+    height: 36px;
+    width: 36px;
+    padding: 6px 4px;
+  }
+  
+  nav h1 {
+    padding: 8px 5px;
+    font-size: 24px/28px
+  }
+
+  nav>a {
+    margin: 0 0 0 20px;
+  }
+  
+  nav>svg.navMenu {
+    display: block;
+  }
+  
+  #navDropdown {
+    min-height: 52px;
+    position: fixed;
+    top: -4px;
+  }
+  
+  #navDropdown a {
+  	font: 16px/48px sans-serif;
+    box-sizing: border-box;
+  }
+  
+  #navDropdown a:hover, #navDropdown a:focus, #navDropdown a:active {
+  	box-shadow: inset 0 -2px 0 0 #e73C3C;
+  }
+  
+  #navDropdown a:before {
+    display: none;
+  }
+  
+  #contentWrapper {
+    padding-top: 49px;
+    -webkit-transition: padding-top 0.5s;
+    transition: padding-top 0.5s;
+  }
+  
+  #coderdojoLogoText {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 10px 0px;
+  }
+
+  #coderdojoLogo {
+    padding-left: 20px;
+    padding-right: 10px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .imgLarge {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .imgLargeText {
+    width: 80%;
+    margin: 16px auto;
+  }
+  
+  aside ul {
+    max-width: 250px;
+  }
+  
+  article p, article h6, article h5, article h4, article h3, article h2, article h1, aside p, aside h6, aside h5, aside h4, aside h3, aside h2, aside h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* If the user is on a very small screen i.e. under 380 pixels wide */
+@media (max-width: 380px) {
+  nav h1 span {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, serif;
+}
+h1{
+    color: blue;
+    background-color:green;
+    font-size:2em;
+    font-family: serif, cursive;
+}
+
+div{
+    border: 5px inset red;
+}
+
+a:link{
+    text-decoration: none;
+    color:blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+div div h1{
+    color: magenta;
+}
+
+div > table {
+    color: blue;
+}
+
+.example{
+    font-family: chiller;
+}
+
+Div p:first-child{
+    color: red;
+}
+
+Div p:nth-child(3){
+    color:green;
+}
+
+#example{
+    Color: red;
+}
+
+a:visited{
+    color:purple;
+}
