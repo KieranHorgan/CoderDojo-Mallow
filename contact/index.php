@@ -66,7 +66,7 @@ Happy coding!
 
               <p class="clearFix">
                 <b> John Martin</b>
-                <a href="mailto:jamartin66@gmail.com" class="floatRight" target="_blank">jamartin@gmail.com</a>
+                <a href="mailto:jamartin66@gmail.com" class="floatRight" target="_blank">jamartin66@gmail.com</a>
               </p>
 
               <p class="clearFix">
