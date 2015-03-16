@@ -11,8 +11,8 @@
 
             <!-- List for dates -->
             <ul>
-              <li>14th of March</li>
-              <li>20th of March</li>
+              <li>21st of March</li>
+              <li>28th of March</li>
             </ul>
 
             <p>All sessions take place from 11.00am to 12.30pm on a Saturday.</p>
