@@ -58,7 +58,7 @@ Happy coding!
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
                 <a href="http://www.juniorspiders.ie" class="noLinkStyle">
-                  <img class="imgLarge" src="/images/Junior%20Spiders.jpg" alt="Sorry, the image couldn't load :\">
+                  <img class="imgLarge" src="images/Junior%20Spiders.jpg" alt="Sorry, the image couldn't load :\">
                 </a>
               </div>
 
@@ -88,7 +88,7 @@ Happy coding!
               
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
-                <img class="imgLarge" src="/images/Youth%20Awards.jpg" alt="Sorry, the image couldn't load :\">
+                <img class="imgLarge" src="images/Youth%20Awards.jpg" alt="Sorry, the image couldn't load :\">
               </div>
 
               <p class="newsDateStamp">- Posted 11th February</p>

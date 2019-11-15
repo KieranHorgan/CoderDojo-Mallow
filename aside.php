@@ -35,36 +35,36 @@
             </p>
 
           </section>
-          
+
           <!-- Section with dashed line -->
           <section>
             <h3>We're looking for volunteers:</h3>
-            <p>If you are interested in mentoring or joining a committee then contact John Martin at <a href="mailto:jamartin66@gmail.com" target="_blank">jamartin66@gmail.com</a>. For more info go to <a href="/volunteer">Volunteer</a>.</p>
+            <p>If you are interested in mentoring or joining a committee then contact John Martin at <a href="mailto:jamartin66@gmail.com" target="_blank">jamartin66@gmail.com</a>. For more info go to <a href="volunteer">Volunteer</a>.</p>
           </section>
-          
+
           <!-- Section with dashed line -->
           <section>
 
             <!-- Third Heading -->
             <h3>Java Code</h3>
-            <p>You can find the Java code from the most recent weeks <a href="/sessions/">here</a>: </p>
+            <p>You can find the Java code from the most recent weeks <a href="sessions/">here</a>: </p>
 
             <!-- List for links to sessions, without dots to left of list -->
             <ul class="noListStyle">
-              
+
               <li class="topList">Week 7</li>
               <li>
-                <a href="/sessions/java/7">Java Code</a>
+                <a href="sessions/java/7">Java Code</a>
               </li>
-              
+
               <li class="topList">Week 6</li>
               <li>
-                <a href="/sessions/java/6">Java Code</a>
+                <a href="sessions/java/6">Java Code</a>
               </li>
 
               <li class="topList">Week 5</li>
               <li>
-                <a href="/sessions/java/5">Java Code</a>
+                <a href="sessions/java/5">Java Code</a>
               </li>
 
             </ul>
@@ -81,7 +81,7 @@
 
               <!-- Automaticaly generated widget from twitter.com -->
               <a class="twitter-timeline" href="https://twitter.com/MallowCoderDojo" target="_blank" data-widget-id="569247109942370304">Tweets by @MallowCoderDojo</a>
-            
+
               <!-- Automaticaly generated script from twitter.com -->
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 

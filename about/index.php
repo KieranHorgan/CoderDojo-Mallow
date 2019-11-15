@@ -78,7 +78,7 @@ Happy coding!
 
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
-                <img class="imgLarge" src="/images/Gouldshill.jpg" alt="Sorry, the image couldn't load :\">
+                <img class="imgLarge" src="images/Gouldshill.jpg" alt="Sorry, the image couldn't load :\">
               </div>
               
               <!-- Text -->

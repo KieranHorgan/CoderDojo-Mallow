@@ -24,7 +24,7 @@ Happy coding!
   <head>
     <?php include("../../../../head.php"); ?>
     <?php include("../../../sessionsHead.php"); ?>
-    <script type="text/javascript" src="/sessions/resources/shBrushCss.js"></script>
+    <script type="text/javascript" src="sessions/resources/shBrushCss.js"></script>
   </head>
   <body>
     <?php include("../../../../nav.php"); ?>
@@ -122,7 +122,7 @@ a:visited{
     <?php include("../../../../footer.php"); ?>
     
     </div>
-    <script src="/sessions/sessionsTest.js"></script>
+    <script src="sessions/sessionsTest.js"></script>
 
     <script type="text/javascript">
       SyntaxHighlighter.all()

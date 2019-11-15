@@ -96,7 +96,7 @@ Happy coding!
       </script>
     
     </div>
-    <script src="/sessions/sessionsTest.js"></script>
+    <script src="sessions/sessionsTest.js"></script>
 
   </body>
 </html>
