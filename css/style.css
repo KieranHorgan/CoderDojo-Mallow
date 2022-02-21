@@ -53,12 +53,20 @@ h3 {
 /* End heading styles */
 
 /* Styling for regular text */
-p, pre, li, a, code, div {
+p, pre, li, div, textarea {
   font-size: 17px;
   font-size: 1.7rem;
   line-height: 1.5;
   color: #555;
   font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+code, textarea {
+  font-family: consolas;
+}
+
+large {
+  font-size: 1.2em;
 }
 
 /* Styling for Lists */
@@ -241,7 +249,7 @@ nav>.navMenu {
   text-decoration: none;
   font: 16px/64px sans-serif;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 18px;
   display: block;
   border-bottom: none;
 }
@@ -668,6 +676,24 @@ footer p {
   margin: 0;
 }
 
+#copyright {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+#spiderAwards {
+  display: inline-block;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#spiderAwards img {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  border-radius: 3px;
+}
+
 /* If the user is on a large screen i.e. atleast 1000 pixels wide */
 @media (min-width: 1000px) {
 
@@ -771,8 +797,8 @@ footer p {
   }
 }
 
-/* If the user is on a small screen i.e. under 570 pixels wide */
-@media (max-width: 570px) {
+/* If the user is on a small screen i.e. under 600 pixels wide */
+@media (max-width: 600px) {
   ol, ul {
     padding: 10px 45px;
   }
@@ -827,6 +853,7 @@ footer p {
   #navDropdown a {
   	font: 16px/48px sans-serif;
     box-sizing: border-box;
+    padding: 0 15px;
   }
   
   #navDropdown a:hover, #navDropdown a:focus, #navDropdown a:active {

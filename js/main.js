@@ -7,7 +7,6 @@ var nav = $("nav"),
     navDropdownLink = $("#navDropdown ul li a"),
     aside = $("aside"),
     article = $("article"),
-    contentWrap = $("#contentWrap"),
     open = false,
     sliderInterval,
     sliderIntervalHasBeenStarted = false,
@@ -25,8 +24,8 @@ function navSetup() {
       navDropdownHeight = $(navDropdown).height();
   
   // Uses Modernizr's Media Query function
-  // If the screen is less than or equal to 570 pixels
-  if (Modernizr.mq('(max-width: 570px)')) {
+  // If the screen is less than or equal to 600 pixels
+  if (Modernizr.mq('(max-width: 600px)')) {
 
     // Set the nav dropdown to be under the main nav
     navDropdown.css({
@@ -111,8 +110,8 @@ function navDropdownMove() {
       navDropdownWidth = $(navDropdown).width(),
       navDropdownHeight = $(navDropdown).height();
 
-  // If the screen is small enough i.e. less than or equal to 570px
-  if (Modernizr.mq('(max-width: 570px)')) {
+  // If the screen is small enough i.e. less than or equal to 600px
+  if (Modernizr.mq('(max-width: 600px)')) {
 
     // If the nav dropdown is open
     if (navIsOpen) {
@@ -141,7 +140,7 @@ function navDropdownMove() {
 
     }
 
-  // Or if the screen is larger than 570 pixels
+  // Or if the screen is larger than 600 pixels
   } else {
       
       // Set the nav dropdown to where it would be without the css property "top"

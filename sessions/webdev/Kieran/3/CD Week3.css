@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: lightgrey;
+}
+
+nav {
+  background: darkblue;
+}
+
+nav h1 {
+  display: inline;
+  margin-left: 150px;
+  color: lightblue;
+}
+
+nav a {
+  display: inline-block;
+  color: lightblue;
+  padding: 10px;
+  margin-right: -5px;
+}
+
+
+
+article {
+  min-height: 100%;
+  width: 80%;
+  background: white;
+  left: 10%;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+

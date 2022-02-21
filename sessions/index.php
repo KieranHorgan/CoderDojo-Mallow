@@ -18,7 +18,7 @@ Happy coding!
 
 -->
 
-<!DOCTYPe html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -60,7 +60,7 @@ Happy coding!
 
                 <h3>Java</h3>
 
-                <p>All the Java Code here was taught by Eugene. These sessions are for students aged 12 to 16, and is the most advanced group. The first session listed here took place on the 17th of January, 2015.</p>
+                <p>The Java Code here was taught by Killian, Tom and Eugene. These sessions are for students aged 10 to 17, and is the most advanced group. The first session listed here took place on the 17th of January, 2015.</p>
 
               </section>
             
@@ -89,14 +89,14 @@ Happy coding!
       <script>
 
         $(document).ready(function () {
-          $("#navDropdown li:nth-child(4) a").addClass("clicked");
-          $("#fixedNav li:nth-child(4) a").addClass("clicked");
+          $("#navDropdown li:nth-child(5) a").addClass("clicked");
+          $("#fixedNav li:nth-child(5) a").addClass("clicked");
         })
 
       </script>
     
     </div>
-    <script src="sessions/sessionsTest.js"></script>
+    <script src="/sessions/sessionsScript.js"></script>
 
   </body>
 </html>

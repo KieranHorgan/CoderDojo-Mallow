@@ -1,0 +1,162 @@
+h3 {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #E73C3C;
+  margin-bottom: 10px;
+}
+
+p, li, a {
+  font-size: 1.8em;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#learnNav {
+  float: left;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+}
+
+#learnNav ul {
+  list-style: none;
+  padding: 10px 10px 10px 30px;
+}
+
+#learnNav li {
+  margin: 8px 0;
+}
+
+#learnNav li a, #learnNav .linkStyle {
+  border: none;
+  padding: 0 4px;
+  border-left: 1px solid #bbb;
+  color: #bbb;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#learnNav li a:hover, #learnNav .linkStyle:hover, #learnNav li.clicked a {
+  border-left: 1px solid #E73C3C;
+  color: #888;
+}
+
+#learnNav li ul {
+  padding: 0;
+}
+
+#learnNav li ul li {
+  margin: 2px 0 2px 10px;
+}
+
+.learnNavTopList {
+  border-bottom: 2px solid #E73C3C;
+  display: inline-block;
+}
+
+#learnNav .openNav.opened {
+  border-left: 1px solid #E73C3C;
+  color: #E73C3C;
+}
+
+#learnNav .accordian {
+  display: none;
+}
+
+#learnNav .accordian.clicked {
+  display: block;
+}
+
+li + .sessionNavTopList {
+  border-top: 1px dashed #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#learnMain {
+  float: right;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  position: relative;
+  top: 0;
+}
+
+#learnMain>section {
+  border-top: 1px dashed #ccc;
+  padding: 20px 0;
+}
+
+#learnMain>section:nth-child(1) {
+  border-top: none;
+  padding-top: 0;
+}
+
+#learnMain>section p {
+  padding: 0 100px;
+}
+
+.code {
+  margin-left: 50px;
+  border-left: 2px solid #E73C3C;
+  padding-left: 10px;
+}
+
+a.tryIt {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #E73C3C;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  margin: 0 0 15px 50px;
+  border: 1px solid #ef6a6a;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.tryIt, a.tryIt:link, a.tryIt:visited {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #E73C3C;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  margin: 0 0 15px 50px;
+  border: 1px solid #ef6a6a;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@media (max-width: 1000px) {
+  #learnMain>section p {
+    padding: 0 20px;
+  }
+
+  .code {
+    margin-left: 20px;
+  }
+
+  #learnNav {
+    float: none;
+    position: relative;
+    border-top: 2px solid #E73C3C;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  #learnMain {
+    float: none;
+  }
+}

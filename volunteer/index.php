@@ -18,7 +18,7 @@ Happy coding!
 
 -->
 
-<!DOCTYPe html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>

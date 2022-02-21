@@ -17,7 +17,7 @@ Happy coding!
   -Kieran H.
 
 -->
-<!DOCTYPe html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -51,26 +51,11 @@ Happy coding!
               
             </section>
             <section>
-
-              <h3 class="clearFix">Phone:</h3>
-
-              <p class="clearFix">
-                <b>Call or text John Martin</b>
-                <span class="floatRight">085 7051365</span>
-              </p>
-
-            </section>
-            <section>
               
-              <h3 class="clearFix">email:</h3>
+              <h3 class="clearFix">Email:</h3>
 
               <p class="clearFix">
-                <b> John Martin</b>
-                <a href="mailto:jamartin66@gmail.com" class="floatRight" target="_blank">jamartin66@gmail.com</a>
-              </p>
-
-              <p class="clearFix">
-                <b>For general enquiries:</b>
+                <b>General questions</b>
                 <a href="mailto:info@coderdojomallow.com" class="floatRight" target="_blank">info@coderdojomallow.com</a>
               </p>
 
@@ -119,8 +104,8 @@ Happy coding!
       <script>
 
         $(document).ready(function () {
-          $("#navDropdown li:nth-child(5) a").addClass("clicked");
-          $("#fixedNav li:nth-child(5) a").addClass("clicked");
+          $("#navDropdown li:nth-child(6) a").addClass("clicked");
+          $("#fixedNav li:nth-child(6) a").addClass("clicked");
         })
 
       </script>

@@ -18,7 +18,7 @@ Happy coding!
 
 -->
 
-<!DOCTYPe html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -78,7 +78,7 @@ Happy coding!
 
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
-                <img class="imgLarge" src="images/Gouldshill.jpg" alt="Sorry, the image couldn't load :\">
+                <img class="imgLarge" src="/images/Gouldshill.jpg" alt="Sorry, the image couldn't load :\">
               </div>
               
               <!-- Text -->
@@ -112,8 +112,8 @@ Happy coding!
       <script>
 
         $(document).ready(function () {
-          $("#navDropdown li:nth-child(3) a").addClass("clicked");
-          $("#fixedNav li:nth-child(3) a").addClass("clicked");
+          $("#navDropdown li:nth-child(4) a").addClass("clicked");
+          $("#fixedNav li:nth-child(4) a").addClass("clicked");
         })
 
       </script>

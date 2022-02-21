@@ -51,18 +51,46 @@ Happy coding!
             <section>
               
               <!-- Second Heading -->
-              <h2>New website entered into Junior Spiders awards</h2>
+              <h2>New website wins 4 awards at eircom Junior Spider</h2>
 
-              <p>CoderDojo Mallow's new website has been entered into the <a href="http://www.juniorspiders.ie">Junior Spiders Awards</a>. The website was designed by Kieran Horgan, a 14 year old mentor at CoderDojo Mallow.</p>
+              <p>CoderDojo Mallow's website has 4 awards at this years eircom <a href="http://www.juniorspiders.ie">Junior Spiders Awards</a>, in the areas of:</p>
+
+              <ul>
+                <li>Creative Web Coding</li>
+                <li>Best Individual Projet</li>
+                <li>Best Web Design</li>
+                <li>Grand Prix Prize (Overall)</li>
+              </ul>
+
+              <p>The website, which was designed by Kieran Horgan, won 3 of the 4 categories it was entered into. Eircom's Junior Spiders awards aim to acknowledge the innovation amongst web creators under the age of 19.</p>
+
+              <!-- Image wrapper in order to centre it -->
+              <div class="imgWrapper">
+                <a href="http://www.juniorspiders.ie/2015-photos/shortlist-2015/" class="noLinkStyle">
+                  <img class="imgLarge" src="/images/junior_spiders/Awards.jpg" alt="Sorry, the image couldn't load :\">
+                </a>
+              </div>
+
+              <p class="newsDateStamp">- Posted 21th April</p>
+
+            </section>
+
+            <!-- Another Section -->
+            <section>
+              
+              <!-- Second Heading -->
+              <h2>New website shortlisted for this year's eircom Junior Spider Awards</h2>
+
+              <p>CoderDojo Mallow's website has been shortlisted for this year's eircom <a href="http://www.juniorspiders.ie">Junior Spiders Awards</a>, in all four categories entered into. The website was designed by Kieran Horgan, a 14 year old mentor at CoderDojo Mallow. The full 2015 shortlist can be found <a href="http://www.juniorspiders.ie/2015-event/shortlist-2015/">here</a></p>
 
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
                 <a href="http://www.juniorspiders.ie" class="noLinkStyle">
-                  <img class="imgLarge" src="images/Junior%20Spiders.jpg" alt="Sorry, the image couldn't load :\">
+                  <img class="imgLarge" src="/images/junior_spiders/Junior%20Spiders.jpg" alt="Sorry, the image couldn't load :\">
                 </a>
               </div>
 
-              <p class="newsDateStamp">- Posted 11th March</p>
+              <p class="newsDateStamp">- Posted 27th March</p>
 
             </section>
             
@@ -88,7 +116,7 @@ Happy coding!
               
               <!-- Image wrapper in order to centre it -->
               <div class="imgWrapper">
-                <img class="imgLarge" src="images/Youth%20Awards.jpg" alt="Sorry, the image couldn't load :\">
+                <img class="imgLarge" src="/images/Youth%20Awards.jpg" alt="Sorry, the image couldn't load :\">
               </div>
 
               <p class="newsDateStamp">- Posted 11th February</p>
